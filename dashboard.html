@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>🍽️ Restaurant</h2>
+        <ul>
+            <li>📊 Dashboard</li>
+            <li>🍕 Menu</li>
+            <li>📋 Orders</li>
+            <li>👥 Staff</li>
+            <li>💰 Billing</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+
+        <div class="navbar">
+            <h3>Dashboard</h3>
+            <div class="navbar-right">
+                <span>👤 Admin</span>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+
+        <div class="welcome">
+            <h1>Welcome, Admin! 👋</h1>
+            <p>Manage your restaurant from here</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Sales</h3>
+                <p>Rs. 1050</p>
+            </div>
+            <div class="stat-card">
+                <h3>Orders Today</h3>
+                <p>12</p>
+            </div>
+            <div class="stat-card">
+                <h3>Menu Items</h3>
+                <p>8</p>
+            </div>
+            <div class="stat-card">
+                <h3>Staff</h3>
+                <p>4</p>
+            </div>
+        </div>
+
+        <div class="transactions">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Item</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Momos</td>
+                        <td>Rs. 150</td>
+                        <td><span class="paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Ice Cream</td>
+                        <td>Rs. 100</td>
+                        <td><span class="paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>Chowmein</td>
+                        <td>Rs. 200</td>
+                        <td><span class="pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
